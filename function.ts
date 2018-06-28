@@ -11,7 +11,7 @@ function fromMessage(name:string, message:string = "Hey, How are you!"):string{
 }
 console.log(this.fromMessage("prafful", "Hello from KKT"))
 
-
+//type:number = 10 //not allowed as type is a keyword
 //arrow function
 var age = 10
 var arrowMessage1 = function(message:string):string{
