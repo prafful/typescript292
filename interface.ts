@@ -11,7 +11,7 @@ class Quadcopter implements Drone{
     name:string;
     propellor:number;
     flightController:boolean;
-    batteryDuration:number;
+    batteryDuration;
 
     getDroneInformation(){
         return this.name;
@@ -19,6 +19,7 @@ class Quadcopter implements Drone{
 
 }
 
-var djidrone:Drone = new Quadcopter()
+var djidrone:Quadcopter = new Quadcopter()
 djidrone.name = "tello"
+djidrone.batteryDuration = "good" 
 console.log(djidrone.getDroneInformation())
